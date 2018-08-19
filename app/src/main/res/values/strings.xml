@@ -1,0 +1,73 @@
+<resources>
+    <string name="database_name">parchintasca_database</string>
+    <string name="app_name">Parchintasca</string>
+    <string name="title_activity_navigator">NavigatorActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="loading">Caricamento</string>
+    <string name="please_wait">Attendere</string>
+    <string name="empty_string_res" />
+    <string name="splash_title">Pezze di Terra</string>
+    <string name="titlebarMain">Parchintasca</string>
+    <string name="search">Search</string>
+    <string name="title_map">Mappa</string>
+    <string name="title_list">Lista</string>
+    <string name="title_favorite">Preferiti</string>
+    <string name="title_news">News</string>
+    <string name="title_settings">Impostazioni</string>
+
+    <string name="babies">Bambini</string>
+    <string name="events">Eventi</string>
+    <string name="nature">Natura</string>
+    <string name="panorama">Panorama</string>
+    <string name="relax">Relax</string>
+    <string name="sport">Sport</string>
+
+    <string name="indicazioni">Indicazioni</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="empty_tag_list">nessun tag</string>
+    <string name="no_favorites">Nessun preferito</string>
+    <string name="no_parks">Nessun parco</string>
+    <string name="bullet">•</string>
+    <string name="times_title">Orari</string>
+    <string name="semicolon">:</string>
+    <string name="accessibility">Accessibile</string>
+    <string name="bike_holder">Porta\nbici</string>
+    <string name="fenced">Recintato</string>
+    <string name="warded">Guardiano</string>
+    <string name="ciclability">Ciclabile</string>
+    <string name="wc">WC</string>
+    <string name="playground">Giochi</string>
+    <string name="pets_allowed">Animali\npermessi</string>
+    <string name="dog_area">Zona\ncani</string>
+    <string name="sport_area">Area\nsport</string>
+    <string name="pic_nic_tables">Tavoli\npic-nic</string>
+    <string name="drinking_fountain">Fontanelle</string>
+    <string name="water_elements">Elementi\nd\'acqua</string>
+    <string name="shade">Ombra</string>
+    <string name="roofed">Coperto</string>
+    <string name="wifi">WI-FI</string>
+    <string name="old_tree">Alberi\nantichi</string>
+    <string name="opportunities">Opportunità</string>
+    <string name="bike_holder_info">Porta bici:</string>
+    <string name="warded_info">Sorvegliato:</string>
+    <string name="wc_info">Servizi:</string>
+    <string name="playground_info">Zona giochi:</string>
+    <string name="dog_area_info">Area cani</string>
+    <string name="sport_area_info">Area sport:</string>
+    <string name="pic_nic_tables_info">Tavoli pic-nic:</string>
+    <string name="drinking_fountain_info">Fontanelle:</string>
+    <string name="water_elements_info">Elementi d\'acqua:</string>
+    <string name="shade_info">Ombra:</string>
+    <string name="roofed_info">Coperto:</string>
+    <string name="opportunities_info">Opportunità:</string>
+    <string name="landscape">Panorama:</string>
+    <string name="peculiarities">Peculiarità:</string>
+    <string name="neighborhood">Vicinato:</string>
+    <string name="entrances">Entrate:</string>
+    <string name="parking">Parcheggi:</string>
+    <string name="number_info">"%d •"</string>
+</resources>

@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+android {
+    compileSdkVersion 'android-P'
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.agaboardi.parchintasca"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+
+        debug {
+
+        }
+    }
+
+    flavorDimensions("channel")
+
+    productFlavors {
+        develop {
+            resValue("string", "MAPS_API_KEY", "AIzaSyD_b-vE285fpfn-xix9EJqToC4WLljj3_8")
+            buildConfigField "String", "BASE_URL", '"http://parchintasca.it/api/"'
+            buildConfigField "String", "BASE_URL_SLIM", '"http://parchintasca.it/apislim/"'
+        }
+
+        staging {
+            resValue("string", "MAPS_API_KEY", "AIzaSyD_b-vE285fpfn-xix9EJqToC4WLljj3_8")
+            buildConfigField "String", "BASE_URL", '"http://parchintasca.it/api/"'
+            buildConfigField "String", "BASE_URL_SLIM", '"http://parchintasca.it/apislim/"'
+        }
+    }
+}
+
+dependencies {
+    implementation "com.android.support:support-v4:$support_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.anko:anko:$anko_version"
+    implementation "com.android.support:appcompat-v7:$support_version"
+    implementation "com.android.support.constraint:constraint-layout:1.1.2"
+    implementation "com.android.support:design:$support_version"
+    implementation "com.android.support:support-vector-drawable:$support_version"
+    implementation "com.android.support:support-v4:$support_version"
+    implementation "com.google.android.gms:play-services-maps:$play_services"
+    implementation "com.google.maps.android:android-maps-utils:0.5"
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    implementation "com.google.maps.android:android-maps-utils:0.5"
+    implementation 'com.github.claudiodegio:MsvSearch:1.2.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.16'
+    implementation 'android.arch.persistence.room:rxjava2:1.1.1'
+    implementation 'com.github.jd-alexander:LikeButton:0.2.3'
+    implementation 'com.facebook.shimmer:shimmer:0.2.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation "com.google.android.gms:play-services-places:$play_services"
+    implementation "android.arch.persistence.room:runtime:1.1.1"
+    kapt "android.arch.persistence.room:compiler:1.1.1"
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    kapt 'com.github.bumptech.glide:compiler:4.7.1'
+}
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'kotlin-android-extensions'
